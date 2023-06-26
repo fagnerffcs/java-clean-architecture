@@ -1,6 +1,7 @@
 package br.com.ffcs.javacleanarchitecture.infra.aluno;
 
 import br.com.ffcs.javacleanarchitecture.dominio.aluno.Aluno;
+import br.com.ffcs.javacleanarchitecture.dominio.aluno.AlunoNaoEncontradoException;
 import br.com.ffcs.javacleanarchitecture.dominio.aluno.CPF;
 import br.com.ffcs.javacleanarchitecture.dominio.aluno.RepositorioDeAlunos;
 

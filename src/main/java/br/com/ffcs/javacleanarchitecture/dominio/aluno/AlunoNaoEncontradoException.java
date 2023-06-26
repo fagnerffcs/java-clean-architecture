@@ -1,4 +1,4 @@
-package br.com.ffcs.javacleanarchitecture.infra.aluno;
+package br.com.ffcs.javacleanarchitecture.dominio.aluno;
 
 import br.com.ffcs.javacleanarchitecture.dominio.aluno.CPF;
 
