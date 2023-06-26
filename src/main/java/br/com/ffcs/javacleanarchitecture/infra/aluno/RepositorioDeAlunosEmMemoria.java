@@ -18,9 +18,12 @@ public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 
     @Override
     public Aluno buscarPorCPF(CPF cpf) throws AlunoNaoEncontradoException {
-        return matriculados.stream().filter(a -> a.getCpf().equals(cpf.getNumero()))
-                                    .findFirst()
-                                    .orElseThrow(() -> new AlunoNaoEncontradoException(cpf));
+        for (Aluno a : matriculados) {
+            if(a.getCpf().getNumero().equals(cpf.getNumero())) {
+                return a;
+            }
+        }
+        throw new AlunoNaoEncontradoException(cpf);
     }
 
     @Override
